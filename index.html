@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Tracker</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .tracker-container {
+      margin: 50px auto;
+      width: 300px;
+    }
+    .pot {
+      position: relative;
+      width: 200px;
+      height: 300px;
+      margin: 0 auto;
+      border: 2px solid #333;
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: #ddd;
+    }
+    .fill {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: #4caf50;
+      transition: height 0.5s;
+    }
+    .total-donations {
+      margin: 20px 0;
+      font-size: 24px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+    <div class="form-link">
+        <a href="https://forms.gle/k2ryPmjRhX5WWm158" target="_blank">Click here to donate</a>
+      </div>
+  <h1>Donation Tracker</h1>
+  <div class="tracker-container">
+    <div class="pot">
+      <div class="fill" id="fill" style="height: 0%;"></div>
+    </div>
+    <div class="total-donations" id="total-donations">Total Donations: RS</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
